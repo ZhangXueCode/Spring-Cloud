@@ -19,6 +19,6 @@ public class OrderController {
 
     @RequestMapping("/{orderId}")
     public OrderInfo getOrderById(@PathVariable("orderId") Integer orderId) {
-        return   orderService.selectById(orderId);
+        return orderService.selectById(orderId);
     }
 }
