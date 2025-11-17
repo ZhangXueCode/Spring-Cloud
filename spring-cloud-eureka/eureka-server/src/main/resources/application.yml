@@ -12,6 +12,6 @@ eureka:
     service-url:
       # 设置Eureka Server的地址,查询服务和注册服务都需要依赖这个地址
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-#logging:
-#  pattern:
-#    console: '%d{MM-dd HH:mm:ss.SSS} %c %M %L [%thread] %m%n'
+logging:
+  pattern:
+    console: '%d{MM-dd HH:mm:ss.SSS} %c %M %L [%thread] %m%n'
