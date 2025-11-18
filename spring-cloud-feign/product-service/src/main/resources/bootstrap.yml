@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: product-service
+  profiles:
+    active: @profile.name@
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+#        namespace: 12741e79-d487-437c-9543-2a05e1646be1

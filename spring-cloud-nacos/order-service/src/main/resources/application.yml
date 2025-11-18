@@ -4,6 +4,8 @@ Server:
 spring:
   application:
     name: order-service
+  profiles:
+    active: @profile.name@
   datasource:
     url: jdbc:mysql://127.0.0.1:3307/cloud_order?characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true
     username: root
@@ -13,6 +15,7 @@ spring:
     nacos:
       discovery:
         server-addr: 8.138.46.63:8848
+
 #        cluster-name: BJ
     loadbalancer:
       nacos:
